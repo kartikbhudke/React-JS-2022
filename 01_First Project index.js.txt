@@ -1,0 +1,44 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+
+
+const currentProject = "React Js";
+const currentDate = new Date().toLocaleDateString();
+
+const linksImg1 = 'https://picsum.photos/310/300';
+const linksImg2 = 'https://picsum.photos/320/300';
+const linksImg3 = 'https://picsum.photos/350/300';
+
+ReactDOM.render(
+  <>
+      <div className="mainContainer">
+        <div className="ProjectName">
+          <h1>Project Name <span className="pName">{currentProject}</span></h1>
+        </div>
+        <div className="MainDiv">
+          
+          <div className="child">
+            <p>React Js</p>
+            <img className="img" src={linksImg1} alt="React"/>
+            <p className="psg">learning Duration : 1 Weak</p>
+            <p className="psg">{`Start Date : ${currentDate}`}</p>
+          </div>
+          <div className="child">
+            <p>Hooks</p>
+            <img className="img" src={linksImg2} alt="Hooks"/>
+            <p className="psg">learning Duration : 10 Days</p>
+            <p className="psg">{`Start Date : ${currentDate}`}</p>
+          </div>
+          <div className="child">
+            <p>Redux</p>
+            <img className="img" src={linksImg3} alt="Redux"/>
+            <p className="psg">learning Duration : 20 Days</p>
+            <p className="psg">{`Start Date : ${currentDate}`}</p>
+          </div>
+        </div>
+      </div>
+  </>,
+  document.getElementById("root")
+);
+

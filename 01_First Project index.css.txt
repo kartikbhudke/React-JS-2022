@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.mainContainer{
+    background:rgb(194, 202, 194);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ProjectName{  
+    width: 300px; 
+    margin:20px auto;    
+    background-color: antiquewhite;
+    box-shadow: 0px 2px 5px #000;
+    text-align: center;    
+    padding: 10px;
+}
+.ProjectName h1{
+    font-size: 18px;
+}
+span.pName{
+    display: block;
+    font-size: 30px !important;
+    color: brown;
+}
+.MainDiv{
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:0 10%;
+}
+.MainDiv h4{
+    width: 100%;
+
+
+}
+.child p{
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    
+}
+.child .psg{
+    text-align: left;
+    padding: 2px;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.child{
+    overflow: hidden;
+}
+.img{
+    max-width: 300px;
+    width: 100% !important;
+    height: 250px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #000;
+    filter: grayscale(100%);
+    transition: 1s all;
+    
+}
+.img:hover{
+    filter: grayscale(0);
+    box-sizing: border-box;
+    transition: 1s all;
+    object-fit: cover;
+    transform: scale(1.05);
+}

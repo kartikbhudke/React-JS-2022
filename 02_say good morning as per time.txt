@@ -1,0 +1,36 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+// const currDate = new Date().toLocaleDateString();
+const currTime = new Date().toLocaleTimeString();
+
+let currDate = new Date(2022, 3, 4, 9);
+currDate = currDate.getHours();
+let greeting = "";
+
+const cssStyle = {
+
+};
+
+if(currDate >= 1 && currDate < 12){
+  greeting = 'Good Morning';
+  cssStyle.color = 'green';
+}else if(currDate >= 12 && currDate < 19 ){
+  greeting = 'Good Afternoon';
+  cssStyle.color = 'red';
+}else{
+  greeting = 'Good Evening';
+  cssStyle.color = 'black';
+}
+
+ReactDOM.render(
+  <>
+    <h1>My Name is Kartik</h1>
+    <h2>Hello Kartik  <span style={cssStyle}>{greeting }</span></h2>
+
+    
+
+
+    <p>{`Today's Time is = ${currTime}`}</p>
+  </>,document.getElementById("root")
+);
